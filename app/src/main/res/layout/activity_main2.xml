@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/txtusrname"
+        android:layout_width="330dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/etcodinv"
+        android:layout_width="164dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="124dp"
+        android:text="Codigo Inventario:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtusrname" />
+
+    <TextView
+        android:id="@+id/evalm"
+        android:layout_width="151dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="70dp"
+        android:text="----"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/etalm"
+        app:layout_constraintTop_toBottomOf="@+id/evcodinv" />
+
+    <TextView
+        android:id="@+id/etalm"
+        android:layout_width="104dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="70dp"
+        android:text="Almacen:"
+        android:textAlignment="viewEnd"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/evcodinv" />
+
+    <TextView
+        android:id="@+id/etusrcodess"
+        android:layout_width="151dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="79dp"
+        android:text="----"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/etzona2"
+        app:layout_constraintTop_toBottomOf="@+id/evalmacen" />
+
+    <TextView
+        android:id="@+id/etzona2"
+        android:layout_width="104dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="78dp"
+        android:text="Usr. Corto:"
+        android:textAlignment="viewEnd"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etzona" />
+
+    <TextView
+        android:id="@+id/evalmacen"
+        android:layout_width="151dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="69dp"
+        android:text="----"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/etzona"
+        app:layout_constraintTop_toBottomOf="@+id/evalm" />
+
+    <TextView
+        android:id="@+id/etzona"
+        android:layout_width="104dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="68dp"
+        android:text="Zona:"
+        android:textAlignment="viewEnd"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etalm" />
+
+    <Spinner
+        android:id="@+id/evcodinv"
+        style="@android:style/Widget.Material.Light.Spinner"
+        android:layout_width="140dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="136dp"
+        android:background="?attr/actionModeBackground"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etcodinv" />
+
+    <Button
+        android:id="@+id/iniSesion2"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="135dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="41dp"
+
+        android:layout_marginBottom="99dp"
+        android:onClick="Siguientepag"
+        android:text="ACEPTAR"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnacc"
+        app:layout_constraintTop_toBottomOf="@+id/etusrcodess" />
+
+    <Button
+        android:id="@+id/btnacc"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="135dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="128dp"
+
+        android:layout_marginBottom="99dp"
+        android:onClick="Regresarpag"
+        android:text="  REGRESAR  "
+        android:textAlignment="center"
+        android:textColor="@color/purple_200"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etzona2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

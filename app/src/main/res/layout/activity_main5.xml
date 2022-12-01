@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5">
+
+    <TextView
+        android:id="@+id/textView_Title_WiFi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="12dp"
+        android:text="LIMITE CAJAS:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ciclicos" />
+
+    <RadioButton
+        android:id="@+id/ciclicos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:onClick="ciclicoss"
+        android:text="CICLICO"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Title_WiFi2" />
+
+    <RadioButton
+        android:id="@+id/anuales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="37dp"
+        android:onClick="anualess"
+        android:text="ANUAL"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/ciclicos"
+        app:layout_constraintTop_toBottomOf="@+id/evclave"
+        android:nextFocusDown="@id/evbasedatos"/>
+
+    <TextView
+        android:id="@+id/textView_Title_WiFi5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="15dp"
+        android:text="LIMITE PIEZAS:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ciclicos" />
+
+    <TextView
+        android:id="@+id/textView_Title_WiFi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        android:text="TIPO DE TOMA:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/evusuario" />
+
+    <Button
+        android:id="@+id/btnguardar"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="330dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="48dp"
+        android:onClick="ejecutar"
+        android:text="Guardar"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLimPiezas" />
+
+    <EditText
+        android:id="@+id/evbasedatos"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="61dp"
+        android:ems="10"
+        android:hint="Base de datos"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/evservidor"
+        app:layout_constraintTop_toTopOf="parent"
+        android:nextFocusDown="@id/evusuario"/>
+
+    <EditText
+        android:id="@+id/evclave"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="61dp"
+        android:ems="10"
+        android:hint="Clave"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/evusuario"
+        app:layout_constraintTop_toBottomOf="@+id/evbasedatos"
+        android:nextFocusDown="@id/txtLimPiezas"/>
+
+    <TextView
+        android:id="@+id/textView_Title_WiFi4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        android:text="CONFIGURACION SERVIDOR:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/evservidor"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="Servidor"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Title_WiFi4" />
+
+    <EditText
+        android:id="@+id/txtLimPiezas"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Piezas"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Title_WiFi5"
+        android:nextFocusDown="@id/txtLimCajas"/>
+
+    <EditText
+        android:id="@+id/evusuario"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/evservidor"
+        android:nextFocusDown="@id/evclave"/>
+
+    <EditText
+        android:id="@+id/txtLimCajas"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Cajas"
+        android:textSize="14sp"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/txtLimPiezas"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Title_WiFi5"
+        android:nextFocusDown="@id/btnguardar"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

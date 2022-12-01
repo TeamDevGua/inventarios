@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">inventarios</string>
+    <string name="NoEncontrado">Articulo no encontrado…</string>
+    <string name="RedConectada">Red: %1$s</string>
+    <string name="RedDesconectada">Red Desconectada</string>
+    <string name="Alerta">ALERTA!!!</string>
+    <string name="TermArea">¿Deseas terminar de auditar?</string>
+    <string name="ModoAnual">¡¡MODO ANUAL!!</string>
+    <string name="ModoAuditor">¡¡MODO AUDITOR!!</string>
+    <string name="ModoCiclico">¡¡MODO CICLICO!!</string>
+    <string name="DisplayInfoUltMarb">ULTIMO CAPTURADO\nCOD: %1$s CANT: %2$s\nDESC: %3$s…</string>
+    <string name="ArtNoGuardado">El articulo no pudo ser guardado. asegurese que el articulo existe y figura en el codigo de inventario.</string>
+</resources>

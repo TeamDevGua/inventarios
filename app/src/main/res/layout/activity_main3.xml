@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <RadioButton
+        android:id="@+id/rbcontar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="185dp"
+        android:onClick="pzasfalse"
+        android:text="CAJAS"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcdinv" />
+
+    <RadioButton
+        android:id="@+id/rbauditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="67dp"
+        android:onClick="cajsfalse"
+        android:text="PIEZAS"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rbcontar"
+        app:layout_constraintTop_toBottomOf="@+id/txtsuc" />
+
+    <TextView
+        android:id="@+id/txtusrname"
+        android:layout_width="330dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtsuc"
+        android:layout_width="88dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="14dp"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textColor="#131313"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/txtalm"
+        app:layout_constraintTop_toBottomOf="@+id/txtusrname" />
+
+    <TextView
+        android:id="@+id/txtcdinv"
+        android:layout_width="88dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="14dp"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textColor="#131313"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtusrname" />
+
+    <TextView
+        android:id="@+id/txtalm"
+        android:layout_width="88dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="14dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="#131313"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/txtcdinv"
+        app:layout_constraintTop_toBottomOf="@+id/txtusrname" />
+
+    <Button
+        android:id="@+id/iniSesion2"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="330dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="241dp"
+        android:layout_marginEnd="41dp"
+
+        android:layout_marginBottom="132dp"
+        android:onClick="Siguientepag"
+        android:text="ACEPTAR"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbcontar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

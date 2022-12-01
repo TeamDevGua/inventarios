@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity8">
+
+    <TextView
+        android:id="@+id/evdesc"
+        android:layout_width="330dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="11dp"
+        android:text="---"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/evcodbar" />
+
+    <EditText
+
+        android:id="@+id/evpza"
+        android:layout_width="79dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="131dp"
+
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="62dp"
+        android:background="?attr/actionModeBackground"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/evcajas"
+        app:layout_constraintTop_toBottomOf="@+id/etpiezas" />
+
+    <TextView
+        android:id="@+id/usrcvecorta"
+        android:layout_width="88dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="41dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="#131313"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtarea"
+        app:layout_constraintTop_toBottomOf="@+id/txtsuc" />
+
+    <TextView
+        android:id="@+id/txtcdinv"
+        android:layout_width="88dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="8dp"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textColor="#131313"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/txtalm"
+        app:layout_constraintTop_toBottomOf="@+id/txtusrname" />
+
+    <TextView
+        android:id="@+id/etcajas5"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="12dp"
+        android:text="Código del artículo:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/evdesc" />
+
+    <TextView
+        android:id="@+id/evprecio"
+        android:layout_width="72dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:text="---"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/etarea8"
+        app:layout_constraintTop_toBottomOf="@+id/evart" />
+
+    <EditText
+        android:id="@+id/editText_Address_WiFi3"
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:hint="IP Address"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnacc3"
+        app:layout_constraintTop_toTopOf="@+id/txtusrname"
+        app:layout_constraintVertical_bias="0.872" />
+
+    <EditText
+        android:id="@+id/evcajas"
+        android:layout_width="79dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="19dp"
+        android:background="?attr/actionModeBackground"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etcajas" />
+
+    <TextView
+        android:id="@+id/etcajas"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="29dp"
+        android:text="CAJAS"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/evpzass" />
+
+    <TextView
+        android:id="@+id/evpzass"
+        android:layout_width="42dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:text="---"
+        android:textColor="#2D2F31"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/etarea7"
+        app:layout_constraintTop_toBottomOf="@+id/etcajas5" />
+
+    <TextView
+        android:id="@+id/etarea7"
+        android:layout_width="44dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:text="Emp.:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etcajas5" />
+
+    <TextView
+        android:id="@+id/txtalm"
+        android:layout_width="88dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textColor="#131313"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtusrname" />
+
+    <TextView
+        android:id="@+id/etarea8"
+        android:layout_width="48dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="17dp"
+        android:text="Prec."
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/evpzascant"
+        app:layout_constraintTop_toBottomOf="@+id/evart" />
+
+    <EditText
+        android:id="@+id/evcodbar"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="14dp"
+        android:background="?attr/actionModeBackground"
+        android:digits="1234567890"
+        android:ems="10"
+        android:hint="escanea el codigo de barras"
+        android:inputType="number"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usrcvecorta" />
+
+    <TextView
+        android:id="@+id/txtarea"
+        android:layout_width="88dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="#131313"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/etarea"
+        app:layout_constraintTop_toBottomOf="@+id/txtcdinv" />
+
+    <TextView
+        android:id="@+id/txtusrname"
+        android:layout_width="330dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnacc3"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="48dp"
+
+        android:onClick="onBackPressed"
+        android:text="RETORNAR"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875" />
+
+    <TextView
+        android:id="@+id/evpzascant"
+        android:layout_width="49dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="17dp"
+        android:text="---"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/evpzass"
+        app:layout_constraintTop_toBottomOf="@+id/etcajas5" />
+
+    <TextView
+        android:id="@+id/evart"
+        android:layout_width="150dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="12dp"
+        android:text="---"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/etcajas5"
+        app:layout_constraintTop_toBottomOf="@+id/evdesc" />
+
+    <TextView
+        android:id="@+id/etpiezas"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="71dp"
+        android:text="PIEZAS"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etcajas"
+        app:layout_constraintTop_toBottomOf="@+id/evprecio" />
+
+    <TextView
+        android:id="@+id/etarea"
+        android:layout_width="44dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:text="Area:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtalm" />
+
+    <TextView
+        android:id="@+id/txtsuc"
+        android:layout_width="88dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="41dp"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textColor="#131313"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtcdinv"
+        app:layout_constraintTop_toBottomOf="@+id/txtusrname" />
+</androidx.constraintlayout.widget.ConstraintLayout>
